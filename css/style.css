@@ -43,3 +43,22 @@ body {
 	background-image: url(../img/fondo.png);
 	background-size: cover;
 }
+
+@media (max-width: 1200px){
+	body {
+		background-image: none;
+		background-color: black;
+	}
+	img {
+		width: 50px;
+	}
+	.area-seleccion {
+		display: flex;
+		justify-content: center;
+	}
+	.tabla-resultados-imagenes {
+		width: 200px;
+		height: 100px;
+		margin: 0 auto;
+	}
+}
