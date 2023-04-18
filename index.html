@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Cuarto Trabajo Practico de JS" />
+	<meta name="keywords" content="Juego Piedra papel tijera vs la IA" />
+	<meta name="author" content="Juan Manuel Llanos" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+	<link rel="stylesheet" href="./css/style.css">
+	<title>Piedra Papel Tijera</title>
+</head>
+
+<body>
+	<div class="area-seleccion mt-3">
+		<div class="contenedor-seleccion">
+			<img src="./img/piedra.png" alt="Piedra" class="piedra">
+			<img src="./img/papel.png" alt="Papel" class="papel">
+			<img src="./img/tijera.png" alt="Tijera" class="tijera">
+		</div>
+	</div>
+
+	<div class="tabla-historial my-3">
+		<p class="victoria">Victorias Kakashi: <strong id="victoria-kakashi" class="hisorial">0</strong></p>
+		<p class="victoria">Victorias Gai: <strong id="victoria-gai" class="hisorial">0</strong></p>
+	</div>
+
+	<div class="tabla-resultados-imagenes container my-3">
+		<section class="col-6 ganoKakashi">
+			<h3 class="text-center">Kakashi</h3>
+			<div class="eleccion d-flex" id="kakashi"></div>
+		</section>
+		<section class="col-6 ganoGai">
+			<h3 class="text-center">Gai</h3>
+			<div class="eleccion d-flex" id="gai"></div>
+		</section>
+	</div>
+
+	<div class="container row mx-auto my-5">
+		<button type="submit" class="reiniciar btn btn-dark col-2 mx-auto my-5">Empezar de nuevo</button>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+		</script>
+	<script src="./js/app.js"></script>
+</body>
+
+</html>

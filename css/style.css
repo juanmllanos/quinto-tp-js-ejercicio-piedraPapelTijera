@@ -1,0 +1,45 @@
+.oculto {
+	display: none;
+}
+
+* {
+	color: white;
+}
+
+img {
+	width: 100px;
+}
+
+.contenedor-seleccion img:hover {
+	background-color: rgba(256, 256, 256, .4);
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.area-seleccion {
+	display: flex;
+	justify-content: space-around;
+}
+
+.tabla-historial,
+.tabla-resultados-imagenes {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+}
+
+.tabla-resultados-imagenes {
+	width: 500px;
+	height: 200px;
+	margin: 0 auto;
+}
+
+.piedra-papel-tijera {
+	margin: 0 auto;
+	text-align: center;
+}
+
+body {
+	background-image: url(../img/fondo.png);
+	background-size: cover;
+}
